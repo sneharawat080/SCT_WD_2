@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #1c1c1c;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    width: 320px;
+}
+
+.stopwatch {
+    margin-top: 20px;
+}
+
+#time {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00ffff;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+.buttons button {
+    background: linear-gradient(145deg, #555, #333);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.buttons button:hover {
+    background: linear-gradient(145deg, #333, #555);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+.buttons button:active {
+    transform: scale(0.95);
+}
+
+#laps {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#laps li {
+    background: #2c2c2c;
+    border: 1px solid #444;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #00ffff;
+    font-weight: bold;
+    text-shadow: 0 0 3px #00ffff;
+}
